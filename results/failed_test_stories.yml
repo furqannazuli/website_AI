@@ -1,0 +1,14 @@
+version: "3.1"
+stories:
+- story: test ask business partnership (./tests/test_stories.yml)
+  steps:
+  - intent: ask_business_partnership  # predicted: ask_business_partner: Saya tertarik dalam kemitraan bisnis, dengan siapa saya harus berbicara?
+  - action: utter_business_partnership
+- story: test ask seller profile (./tests/test_stories.yml)
+  steps:
+  - intent: ask_seller_profile  # predicted: ask_create_seller_profile: Bagaimana cara saya memperbarui profil penjual saya?
+  - action: utter_seller_profile
+- story: test ask selling new used items (./tests/test_stories.yml)
+  steps:
+  - intent: ask_selling_new_used_items  # predicted: ask_sell_new_used_items: Apakah saya bisa menjual barang baru dan bekas di sini?
+  - action: utter_selling_new_used_items

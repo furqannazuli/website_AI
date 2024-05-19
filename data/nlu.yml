@@ -1,0 +1,104 @@
+version: "2.0"
+nlu:
+- intent: ask_about_tokolangit
+  examples: |
+    - Apa itu TokoLangit?
+    - Ceritakan tentang TokoLangit
+    - Saya ingin tahu tentang TokoLangit
+
+- intent: ask_how_to_sell
+  examples: |
+    - Bagaimana Cara Memulai Berjualan di TokoLangit?
+    - Bagaimana cara jualan di TokoLangit?
+    - Saya ingin berjualan di TokoLangit, bagaimana caranya?
+
+- intent: ask_seller_fee
+  examples: |
+    - Apakah Ada Biaya untuk Mendaftar sebagai Penjual?
+    - Berapa biaya untuk menjadi penjual di TokoLangit?
+    - Apakah mendaftar sebagai penjual gratis?
+
+- intent: ask_how_to_buy
+  examples: |
+    - Bagaimana Cara Membeli Produk di TokoLangit?
+    - Bagaimana cara beli produk di TokoLangit?
+    - Saya ingin membeli barang, bagaimana caranya?
+
+- intent: ask_contact_seller
+  examples: |
+    - Bagaimana Cara Menghubungi Penjual?
+    - Bagaimana cara kontak penjual?
+    - Saya ingin menghubungi penjual
+
+- intent: ask_transaction_safety
+  examples: |
+    - Apakah Transaksi di TokoLangit Aman?
+    - Bagaimana keamanan transaksi di TokoLangit?
+    - Apakah transaksi di TokoLangit terjamin?
+
+- intent: ask_return_policy
+  examples: |
+    - Apa Kebijakan Pengembalian Barang di TokoLangit?
+    - Bagaimana kebijakan pengembalian barang di TokoLangit?
+    - Apakah bisa mengembalikan barang di TokoLangit?
+
+- intent: ask_shipping_service
+  examples: |
+    - Apakah TokoLangit Menyediakan Layanan Pengiriman?
+    - Bagaimana pengiriman barang di TokoLangit?
+    - Apakah ada layanan pengiriman di TokoLangit?
+
+- intent: ask_technical_issues
+  examples: |
+    - Bagaimana Cara Mengatasi Masalah Teknis di Platform?
+    - Saya mengalami masalah teknis, bagaimana solusinya?
+    - Apa yang harus dilakukan jika ada masalah teknis?
+
+- intent: ask_business_partner
+  examples: |
+    - Bagaimana Jika Saya Ingin Menjadi Mitra Bisnis TokoLangit?
+    - Bagaimana cara menjadi mitra bisnis TokoLangit?
+    - Saya ingin berkolaborasi dengan TokoLangit, bagaimana caranya?
+
+- intent: ask_create_seller_profile
+  examples: |
+    - Bagaimana Cara Membuat Profil Penjual yang Menarik?
+    - Bagaimana cara membuat profil penjual yang bagus?
+    - Tips untuk membuat profil penjual di TokoLangit
+
+- intent: ask_sell_new_used_items
+  examples: |
+    - Apakah Saya Bisa Menjual Barang Baru dan Bekas di TokoLangit?
+    - Bisakah menjual barang bekas di TokoLangit?
+    - Apakah TokoLangit menerima barang bekas?
+
+- intent: ask_order_status
+  examples: |
+    - Bagaimana Cara Mengetahui Status Pesanan Saya?
+    - Bagaimana cara melacak pesanan saya?
+    - Di mana saya bisa melihat status pesanan saya?
+
+- intent: ask_payment_methods
+  examples: |
+    - Apakah TokoLangit Memfasilitasi Pembayaran Menggunakan Metode Tertentu?
+    - Apa metode pembayaran yang didukung oleh TokoLangit?
+    - Bagaimana cara membayar di TokoLangit?
+
+- intent: ask_foreign_seller
+  examples: |
+    - Apakah Saya Bisa Mendaftar sebagai Penjual Jika Saya Tinggal di Luar Negeri?
+    - Bisakah penjual luar negeri bergabung di TokoLangit?
+    - Apakah TokoLangit menerima penjual dari luar negeri?
+
+- intent: utter_goodbye
+  examples: |
+    - Terima kasih
+
+- intent: ask_greeting
+  examples: |
+    - halo
+    - hi
+    - pagi
+    - siang
+    - sore
+    - malam

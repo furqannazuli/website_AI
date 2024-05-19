@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}Predict Sentiment - Chatbot{% endblock %}
+{% block jumbotron_title %}Chatbot{% endblock %}
+{% block jumbotron_description %}Deskripsi singkat untuk halaman Chatbot.{% endblock %}
+{% block content %}
+<div class="container mb-5">
+    <form id="chatbotForm" class="mt-3">
+        <div class="form-group">
+            <label for="question">Question:</label>
+            <textarea class="form-control" id="question" name="question" rows="4" placeholder="Halo"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<div>
+    <h2>Response from chatbot:</h2>
+    <div id="responseContainer" style="max-height: 500px; overflow-y: auto;"></div>
+</div>
+
+<script>
+    document.getElementById('chatbotForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from reloading the page
+        const question = document.getElementById('question').value;
+
+        // ambil data dari pertanyaan
+        const responseContainer = document.getElementById('responseContainer');
+        const userCard = document.createElement('div');
+        userCard.className = 'card card-user';
+        userCard.innerHTML = `
+            <div class="card-body d-flex align-items-center">
+                <img src="user-avatar.png" class="avatar" alt="User Avatar">
+                <p class="card-text ml-2">${question}</p>
+            </div>
+        `;
+        responseContainer.appendChild(userCard);
+        document.getElementById('question').value = ''; // Clear the textarea
+
+        // Scroll to bottom
+        responseContainer.scrollTop = responseContainer.scrollHeight;
+
+        fetch('/chatbot-process', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: question, sender: "user" }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            const botCard = document.createElement('div');
+            botCard.className = 'card card-bot';
+            botCard.innerHTML = `
+                <div class="card-body d-flex align-items-center justify-content-end">
+                    <p class="card-text mr-2">${data[0].text}</p>
+                    <img src="bot-avatar.png" class="avatar" alt="Bot Avatar">
+                </div>
+            `;
+            responseContainer.appendChild(botCard);
+
+            // Scroll to bottom
+            responseContainer.scrollTop = responseContainer.scrollHeight;
+        })
+        .catch(error => console.error('Error:', error));
+    });
+</script>
+
+<style>
+    .card-user {
+        background-color: #e0f7fa;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .card-bot {
+        background-color: #f1f8e9;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .card-body {
+        display: flex;
+        align-items: center;
+    }
+    .card-body p {
+        margin: 0;
+    }
+</style>
+{% endblock %}

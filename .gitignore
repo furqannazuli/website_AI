@@ -1,0 +1,25 @@
+# Environment folders
+venv/
+venv2/
+.env
+/.vscode
+
+# Compiled Python files
+*.pyc
+
+# Files for your text editor
+*~
+*.swp
+
+# Dependency directories
+__pycache__/
+/node_modules
+/node_modules/*
+
+# Logs and databases
+*.log
+*.sqlite
+
+# rasa 
+.rasa/cache
+.rasa/*

@@ -1,0 +1,127 @@
+version: "2.0"
+stories:
+  - story: test ask about tokolangit
+    metadata:
+      user_type: "pengunjung_baru"
+      user_intent: "pertanyaan_umum"
+    steps:
+      - user: "Bisa ceritakan tentang Tokolangit?"
+        intent: ask_about_tokolangit
+      - action: utter_about_tokolangit
+
+  - story: test ask how to sell
+    metadata:
+      user_type: "calon_penjual"
+      user_intent: "niat_jual"
+    steps:
+      - user: "Bagaimana cara mulai berjualan di platform Anda?"
+        intent: ask_how_to_sell
+      - action: utter_how_to_sell
+
+  - story: test ask seller fee
+    metadata:
+      user_type: "penjual_terverifikasi"
+      user_intent: "pertanyaan_biaya"
+    steps:
+      - user: "Berapa biaya untuk menjual barang?"
+        intent: ask_seller_fee
+      - action: utter_seller_fee
+
+  - story: test ask how to buy
+    metadata:
+      user_type: "pembeli_baru"
+      user_intent: "niat_beli"
+    steps:
+      - user: "Bagaimana cara membeli sesuatu dari Tokolangit?"
+        intent: ask_how_to_buy
+      - action: utter_how_to_buy
+
+  - story: test ask contact seller
+    metadata:
+      user_type: "pembeli"
+      user_intent: "butuh_dukungan"
+    steps:
+      - user: "Bagaimana cara menghubungi penjual?"
+        intent: ask_contact_seller
+      - action: utter_contact_seller
+
+  - story: test ask transaction safety
+    metadata:
+      user_type: "pengguna_khawatir"
+      user_intent: "kekhawatiran_keamanan"
+    steps:
+      - user: "Seberapa aman transaksi di sini?"
+        intent: ask_transaction_safety
+      - action: utter_transaction_safety
+
+  - story: test ask return policy
+    metadata:
+      user_type: "pelanggan_tidak_puas"
+      user_intent: "niat_pengembalian"
+    steps:
+      - user: "Apa kebijakan pengembalian Anda?"
+        intent: ask_return_policy
+      - action: utter_return_policy
+
+  - story: test ask shipping service
+    metadata:
+      user_type: "pembeli"
+      user_intent: "pertanyaan_logistik"
+    steps:
+      - user: "Apa saja opsi pengiriman yang tersedia?"
+        intent: ask_shipping_service
+      - action: utter_shipping_service
+
+  - story: test ask technical issues
+    metadata:
+      user_type: "pengguna_bermasalah"
+      user_intent: "dukungan_teknis"
+    steps:
+      - user: "Saya mengalami beberapa masalah teknis, bisa bantu?"
+        intent: ask_technical_issues
+      - action: utter_technical_issues
+
+  - story: test ask business partnership
+    metadata:
+      user_type: "mitra_potensial"
+      user_intent: "pertanyaan_kemitraan"
+    steps:
+      - user: "Saya tertarik dalam kemitraan bisnis, dengan siapa saya harus berbicara?"
+        intent: ask_business_partnership
+      - action: utter_business_partnership
+
+  - story: test ask seller profile
+    metadata:
+      user_type: "penjual_ada"
+      user_intent: "pembaruan_profil"
+    steps:
+      - user: "Bagaimana cara saya memperbarui profil penjual saya?"
+        intent: ask_seller_profile
+      - action: utter_seller_profile
+
+  - story: test ask selling new used items
+    metadata:
+      user_type: "penjual_beragam"
+      user_intent: "pertanyaan_produk"
+    steps:
+      - user: "Apakah saya bisa menjual barang baru dan bekas di sini?"
+        intent: ask_selling_new_used_items
+      - action: utter_selling_new_used_items
+
+  - story: test ask order status
+    metadata:
+      user_type: "pembeli_impatient"
+      user_intent: "cek_status_order"
+    steps:
+      - user: "Apa status pesanan saya?"
+        intent: ask_order_status
+      - action: utter_order_status
+
+  - story: test ask payment methods
+    metadata:
+      user_type: "pembeli_baru"
+      user_intent: "opsi_pembayaran"
+    steps:
+      - user: "Apa saja metode pembayaran yang Anda"
+        intent: ask_payment_methods
+      - action: utter_payment_methods

@@ -1,0 +1,77 @@
+version: "2.0"
+stories:
+- story: ask about tokolangit
+  steps:
+  - intent: ask_about_tokolangit
+  - action: utter_about_tokolangit
+
+- story: ask how to sell
+  steps:
+  - intent: ask_how_to_sell
+  - action: utter_how_to_sell
+
+- story: ask seller fee
+  steps:
+  - intent: ask_seller_fee
+  - action: utter_seller_fee
+
+- story: ask how to buy
+  steps:
+  - intent: ask_how_to_buy
+  - action: utter_how_to_buy
+
+- story: ask contact seller
+  steps:
+  - intent: ask_contact_seller
+  - action: utter_contact_seller
+
+- story: ask transaction safety
+  steps:
+  - intent: ask_transaction_safety
+  - action: utter_transaction_safety
+
+- story: ask return policy
+  steps:
+  - intent: ask_return_policy
+  - action: utter_return_policy
+
+- story: ask shipping service
+  steps:
+  - intent: ask_shipping_service
+  - action: utter_shipping_service
+
+- story: ask technical issues
+  steps:
+  - intent: ask_technical_issues
+  - action: utter_technical_issues
+
+- story: ask business partnership
+  steps:
+  - intent: ask_business_partnership
+  - action: utter_business_partnership
+
+- story: ask seller profile
+  steps:
+  - intent: ask_seller_profile
+  - action: utter_seller_profile
+
+- story: ask sell new used items
+  steps:
+  - intent: ask_selling_new_used_items
+  - action: utter_selling_new_used_items
+
+- story: ask order status
+  steps:
+  - intent: ask_order_status
+  - action: utter_order_status
+
+- story: ask payment methods
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_payment_methods
+
+
+- story: ask greeting
+  steps:
+  - intent: ask_greeting
+  - action: utter_greeting

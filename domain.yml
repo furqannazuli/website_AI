@@ -1,0 +1,90 @@
+version: "2.0"
+
+intents:
+  - ask_about_tokolangit
+  - ask_how_to_sell
+  - ask_seller_fee
+  - ask_how_to_buy
+  - ask_contact_seller
+  - ask_transaction_safety
+  - ask_return_policy
+  - ask_shipping_service
+  - ask_technical_issues
+  - ask_business_partnership
+  - ask_seller_profile
+  - ask_selling_new_used_items
+  - ask_order_status
+  - ask_payment_methods
+  - ask_selling_from_abroad
+  - ask_greeting
+
+responses:
+  utter_about_tokolangit:
+  - text: "TokoLangit adalah sebuah platform online yang menghubungkan penjual dan pembeli untuk bertransaksi produk dan layanan. Kami menyediakan tempat bagi penjual untuk memasarkan produk mereka dan bagi pembeli untuk menemukan berbagai barang dengan mudah."
+
+  utter_how_to_sell:
+  - text: "Untuk memulai berjualan di TokoLangit Anda perlu membuat akun penjual. Daftar akun dengan mengikuti langkah-langkah yang disediakan di situs kami. Setelah terdaftar Anda dapat mulai memasarkan produk Anda kepada jutaan pengguna kami."
+
+  utter_seller_fee:
+  - text: "Mendaftar sebagai penjual di TokoLangit gratis. Namun kami mengenakan biaya komisi atas penjualan yang berhasil dilakukan. Informasi lebih lanjut tentang struktur biaya dapat ditemukan di halaman 'Panduan Penjual' kami."
+
+  utter_how_to_buy:
+  - text: "Untuk membeli produk Anda perlu membuat akun pembeli. Selanjutnya jelajahi berbagai kategori produk yang kami tawarkan, tambahkan produk yang diinginkan ke keranjang belanja, dan selesaikan proses pembayaran."
+
+  utter_contact_seller:
+  - text: "Setiap penjual memiliki profil yang mencakup informasi kontak dan deskripsi toko mereka. Anda dapat menghubungi penjual melalui pesan langsung di platform kami untuk bertanya lebih lanjut tentang produk atau layanan yang mereka tawarkan."
+
+  utter_transaction_safety:
+  - text: "Kami melakukan upaya terbaik untuk menjaga keamanan transaksi di platform kami. Kami menggunakan teknologi enkripsi dan perlindungan data untuk melindungi informasi pembayaran Anda. Namun, selalu berhati-hati dan waspada saat bertransaksi online."
+
+  utter_return_policy:
+  - text: "Kebijakan pengembalian berbeda-beda tergantung pada kebijakan penjual masing-masing. Sebagian besar penjual menawarkan kebijakan pengembalian dalam jangka waktu tertentu setelah pembelian. Informasi lebih lanjut dapat ditemukan di halaman detail produk atau dengan menghubungi penjual."
+
+  utter_shipping_service:
+  - text: "Kami bekerja sama dengan layanan pengiriman terpercaya untuk menyediakan opsi pengiriman kepada pelanggan kami. Biaya pengiriman dan estimasi waktu pengiriman dapat dilihat saat proses checkout."
+
+  utter_technical_issues:
+  - text: "Jika Anda mengalami masalah teknis saat menggunakan platform kami, silakan hubungi tim dukungan pelanggan kami melalui formulir kontak di situs web atau melalui email di help@tokolangit.com. Tim kami akan dengan senang hati membantu menyelesaikan masalah Anda."
+
+  utter_business_partnership:
+  - text: "Kami selalu terbuka untuk kolaborasi dan kemitraan baru. Jika Anda memiliki ide untuk bekerja sama dengan TokoLangit, silakan hubungi kami melalui email di partnerships@tokolangit.com dengan proposal atau informasi lebih lanjut tentang rencana Anda."
+
+  utter_seller_profile:
+  - text: "Anda dapat membuat profil penjual yang menarik dengan mengunggah foto produk berkualitas tinggi, memberikan deskripsi yang jelas tentang toko dan produk Anda, serta menjaga interaksi yang baik dengan pembeli melalui fitur komunikasi yang disediakan."
+
+  utter_selling_new_used_items:
+  - text: "Ya, Anda dapat menjual baik barang baru maupun bekas di TokoLangit. Pastikan untuk memberikan informasi yang jujur dan lengkap tentang kondisi barang yang Anda jual."
+
+  utter_order_status:
+  - text: "Anda dapat melacak status pesanan Anda dengan masuk ke akun pembeli Anda. Di sana Anda akan menemukan riwayat pesanan lengkap beserta status pengiriman dan detail pembayaran."
+
+  utter_payment_methods:
+  - text: "Kami mendukung berbagai metode pembayaran termasuk kartu kredit, transfer bank, e-wallet, dan metode pembayaran digital lainnya. Pilihan metode pembayaran dapat dilihat saat proses checkout."
+
+  utter_selling_from_abroad:
+  - text: "Saat ini kami hanya menerima penjual yang berlokasi di negara tertentu. Namun, kami terus memperluas jangkauan kami. Silakan hubungi tim dukungan pelanggan kami untuk informasi lebih lanjut."
+
+  utter_goodbye:
+  - text: "Terima kasih telah menggunakan TokoLangit. Senang melayani Anda!"
+
+  utter_greeting:
+  - text: "Selamat datang di layanan bantuan TokoLangit!"
+
+actions:
+  - utter_about_tokolangit
+  - utter_how_to_sell
+  - utter_seller_fee
+  - utter_how_to_buy
+  - utter_contact_seller
+  - utter_transaction_safety
+  - utter_return_policy
+  - utter_shipping_service
+  - utter_technical_issues
+  - utter_business_partnership
+  - utter_seller_profile
+  - utter_selling_new_used_items
+  - utter_order_status
+  - utter_payment_methods
+  - utter_selling_from_abroad
+  - utter_goodbye
+  - utter_greeting
